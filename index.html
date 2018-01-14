@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Architect Quiz 101</title>
+	<!-- responsive screen -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Google Font -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+	<!-- Stylesheet -->
+	<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+	<header class="title-elements">
+		<img class="logo" src="https://media1.giphy.com/media/2V3mDsSC5NvJm/giphy.gif">
+		<h3>Architect Quiz 101</h3>
+	</header>
+
+	<main class="responsive-screen" id="question-color">
+		<section class="start-page">
+			<div>
+				<h3>Welcome! My Friend!</h3>
+				<p>In this quiz you will answer 10 multiple choice questions about architecture.</p>
+				<p>You can go back and forth to answer questions before you hit submit, there will be a progress bar reminding you how many questions are left!</p>
+				<p>Now let's start! Good luck!</p>
+			</div>
+			<button class='start-page-button'>Start</button>
+		</section>
+		<section class="js-progress-bar js-hidden">
+
+			<p class="progressBarText"></p>
+		</section>
+		<form action="grade.php" method="post" id="quiz">
+			<fieldset class="js-quiz-list">
+			</fieldset>
+
+		</form>
+
+		<section class="js-buttons-toggle js-hidden">
+			<div class="button-flex-center">
+				<button class="previous">Previous</button>
+				<button class="next">Next</button>
+			</div>
+			<div class="submit-button toggle-submit"><button type="submit" value="send request">Submit</button></div>
+		</section>
+		<section class='js-see-answer-page'></section>
+		<section class="final-page">
+		</section>
+	
+	</main>
+	<br>
+	<footer>Design by Leo Yuanjie Li</footer>
+    <script src="https://code.jquery.com/jquery.min.js"></script>
+    <script type="text/javascript" src="sketch.js"></script>
+
+</body>
+</html>

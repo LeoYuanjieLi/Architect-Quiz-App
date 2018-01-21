@@ -147,14 +147,6 @@ header h3 {
   top:25%;
 }
 
-.correct-answer {
-  margin-left: 10px;
-  background-color:#57c24e;
-  color:white;
-  font-size:14px;
-  text-decoration:none;
-  border-radius:5px;
-}
 
 /*radio-toolbar*/
 .radio-toolbar label {
@@ -170,7 +162,7 @@ header h3 {
   opacity: 0;
 }
 .radio-toolbar input[type="radio"]:checked+label {
-  color: orange;
+  color: #0000FF;
   font-size: 16px;
   
 }
@@ -227,7 +219,7 @@ header h3 {
 /*correct answer*/
 .correct-answer {
 	margin-left: 10px;
-	background-color:#57c24e;
+	background-color:#006600;
 	color:white;
 	font-size:21px;
 	text-decoration:none;
@@ -249,7 +241,7 @@ header h3 {
 	font-weight: bold;
 	font-size:24px;
 	color: white;
-	background-color: #57c24e;
+	background-color: #006100;
 	border-radius: 5px;
 	border-style: none;
 }
@@ -361,7 +353,7 @@ header h3 {
   font-size:14px;  
 }
 .done {
-  color:#57c24e;
+  color:#006600;
   font-weight:bold;
 }
 
@@ -434,7 +426,7 @@ footer {
 
   }
   .radio-toolbar input[type="radio"]:checked+label {
-    color: orange;
+    color: #0000FF;
     font-size: 21px;
     
   }

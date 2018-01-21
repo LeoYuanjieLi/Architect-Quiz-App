@@ -107,28 +107,21 @@ function renderProgressBar(){
 function generateItemElement(item, itemIndex) {
 	let index = itemIndex + 1;
 	return `
-		<div class="list-item" data-item-index="${itemIndex}" >
+		<div class="list-item radio-toolbar" data-item-index="${itemIndex}" >
 			<legend>${index} . ${item.question}</legend>
 			<br></br>
-			<div class="radio-toolbar">
 			    <input type="radio" name="question-${index}-answers" id="question-${index}-answers-A" value="A"  />
 			    <label for="question-${index}-answers-A">A. ${item.optionA}<span class='correct-answer'></span></label>
-			</div>
 			<br>
-			<div class="radio-toolbar">
 			    <input type="radio" name="question-${index}-answers" id="question-${index}-answers-B" value="B"  />
 			    <label for="question-${index}-answers-B">B. ${item.optionB}<span class='correct-answer'></span></label>
-			</div>
 			<br>
-			<div class="radio-toolbar">
 			    <input type="radio" name="question-${index}-answers" id="question-${index}-answers-C" value="C"  />
 			    <label for="question-${index}-answers-C">C. ${item.optionC}<span class='correct-answer'></span></label>
-			</div>
+
 			<br>
-			<div class="radio-toolbar">
 			    <input type="radio" name="question-${index}-answers" id="question-${index}-answers-D" value="D"  />
-			    <label for="question-${index}-answers-D">D. ${item.optionD}<span class='correct-answer'></span></label>
-			</div>	
+			    <label for="question-${index}-answers-D">D. ${item.optionD}<span class='correct-answer'></span></label>	
 			<br>		
 		</div>
 
